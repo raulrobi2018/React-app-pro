@@ -11,7 +11,7 @@ import logo from "../logo.svg";
 import {routes} from "./routes";
 
 const getRoutes = () =>
-    routes.map(({component: Component, path}) => (
+    routes.map(({Component, path}) => (
         <Route key={path} path={path} element={<Component />} />
     ));
 
